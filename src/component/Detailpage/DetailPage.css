@@ -1,0 +1,161 @@
+.DBlog-Container {
+    background: linear-gradient(5deg, #ffffff 50%, #2C2E43 50%);
+    display: flex;
+    /* height: 85vh; */
+    padding-left: 50px;
+    align-items: center;
+}
+
+.videoDescription{
+  text-align: center;
+}
+.videoDescription h2{
+   padding-top: 20px;
+   color: white;
+}
+
+
+.videoDescription a .video-img-align{
+  width: 100% !important;
+  transition: transform 0.2s;
+}
+
+.videoDescription a .video-img-align:hover{
+  transform: scale(1.03);
+}
+.video-img-align{
+  
+  padding: 20px;
+  width: 100% !important;
+  max-width: 900px !important;
+}
+
+
+.blog-description{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.blog-description p{
+  max-width: 500px;
+  margin: 5px 20px;
+  text-align: left;
+  color: #838282;
+}
+
+
+.logo-star-align{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.blog-description img {
+  width: 60px;
+  
+ 
+}
+
+
+/* CSS for the stars in the detail page */
+.filled-star {
+  color: gold;
+  font-size: 24px;
+  margin-right: 2px;
+}
+
+.empty-star {
+  color: lightgray;
+  font-size: 24px;
+  margin-right: 2px;
+}
+
+/* Optional: Adjustments for the rating and button alignment */
+.rating-align {
+  display: flex;
+  align-items: center;
+}
+
+.rating-align button {
+
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.rating-align button:hover {
+  background-color: #0056b3;
+}
+
+/* .Rating-blog-align{
+  background-color: #2C2E43;
+  margin-right: 20px;
+} */
+
+@media screen and (min-width: 1240px) {
+  .socil{
+    position: relative;
+    right: 100px;
+  }
+ }
+
+@media screen and (max-width: 1000px) {
+ .socil{
+  display: none;
+ }
+
+ /* .DBlog-Container{
+  height: 65vh;
+} */
+}
+
+@media screen and (max-width: 800px) {
+  .blog-description{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .DBlog-Container{
+    /* height: 75vh; */
+    padding-left: 1px;
+    justify-content: center;
+  }
+  .blog-description p{
+  
+    text-align: justify;
+  }
+  .blog-description img {
+    width: 40px;
+    
+   
+  }
+ 
+ }
+
+@media screen and (max-width: 500px) {
+  .video-img-align{
+    margin-top: 0.7rem; 
+    padding: 20px;
+    width: 100%;
+  }
+
+
+
+  .blog-description{
+   
+    flex-direction: column;
+  }
+
+  /* .DBlog-Container{
+    height: 55vh;
+  } */
+
+  .blog-description p{
+    text-align: justify;
+  }
+}

@@ -1,0 +1,137 @@
+
+
+.recent-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,  1fr);
+    justify-content: center !important;
+    align-items: center !important;
+
+}
+
+
+.blog-card-grid {
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(133, 133, 133, 0.595);
+    transition: transform 0.2s;
+    height: auto;
+    margin-top: 25px;
+    width: 220px;
+}
+
+
+.blog-card:hover{
+    transform: scale(1.05);
+}
+
+.blog-card1-img {
+
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+
+}
+
+
+.recent-posts{
+    display: flex;
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent-posts  h3{
+    text-align: center;
+}
+
+.recent-blog-overlay {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.593); 
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+}
+
+.recent-blog-overlay h3, .recent-blog-overlay p {
+    margin: 7px 0; 
+}
+
+
+.recent-blog-overlay button{
+    padding: 5px 10px;
+    margin: 5px 0px 10px 0px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #ffd523;
+    color: #2c2e43;
+    font-weight: 500;
+}
+
+@keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .recent-blog-overlay h5 {
+    white-space: nowrap; 
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    animation: marquee 8s linear infinite; /* 8 seconds for the full scroll */
+  }
+  
+
+@media screen and (max-width:600px) {
+    .blog-card1-img{
+        width: 100%;
+        height: 100%;
+    }
+    .blog-card-grid{
+        margin: 5px;
+        min-width: 220px;
+        flex-shrink: 0;
+    }
+
+ 
+.recent-posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+
+    .recent-blog-grid{
+        display: flex;
+        flex-direction: row;
+    
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    .recent-posts::-webkit-scrollbar {
+        height: 8px; 
+    }
+
+    .recent-posts::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.5); 
+        border-radius: 5px;
+    }
+
+    .recent-posts::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1); 
+    }
+}

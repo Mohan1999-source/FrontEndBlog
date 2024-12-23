@@ -1,0 +1,46 @@
+
+.Button-align{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.Button-align .btn-align {
+    border: 1px solid black !important;
+    padding: 7px 30px !important;
+    margin: 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #2C2E43;
+    border-radius: 7px;
+    box-shadow: 2px 2px 3px rgb(167, 162, 162);
+}
+
+.menu-align{
+    font-weight: 500;
+    font-size: small;
+}
+
+.Button-align .btn-align:hover {
+    background-color: #2C2E43;
+    color: #FFD523;
+}
+
+.Button-align .btn-align:focus, .Button-align .btn-align:active {
+    background-color: rgb(252, 252, 252);
+    color: rgb(9, 9, 9);
+    font-weight: 500;
+    outline: none; 
+}
+
+
+@media screen and (max-width:900px) {
+    .Button-align .btn-align{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Button-align .btn-align{
+        margin: 5px;
+    }
+}

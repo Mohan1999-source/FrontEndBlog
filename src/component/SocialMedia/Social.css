@@ -1,0 +1,34 @@
+.Social-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 45px;
+  position: relative;
+}
+
+.Social-container a {
+  box-shadow: 2px 2px 3px 1px #a6a6a6;
+  background-color: #FFD523;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  .Social-container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1px;
+    gap: 25px;
+  }
+
+  .Social-container a {
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+}

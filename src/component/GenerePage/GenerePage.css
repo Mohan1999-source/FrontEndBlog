@@ -1,0 +1,132 @@
+.genere-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 4rem 4rem;
+    justify-content: space-between;
+}
+
+.genere-info-container{
+    background-color: rgba(177, 177, 177, 0.605);
+    display: flex;
+    padding: 30px 20px;
+    align-items: center;
+   justify-content: space-around;
+   
+}
+.genere-info {
+    display: flex;
+    flex-direction: column;
+    /* padding:30px 10px; */
+}
+
+.genere-item {
+    display: flex; 
+    justify-content: flex-start; 
+    margin-bottom: 8px; 
+}
+
+strong {
+    flex: 0 0 auto; 
+    width: 180px; 
+}
+
+span {
+    flex: 1; 
+    text-align: left; 
+
+}
+
+
+.description h1 {
+    font-size: 2.7rem;
+    line-height: 1.2; /* Adjusts the spacing between lines */
+    white-space: normal; /* Allows wrapping to multiple lines */
+    overflow-wrap: break-word; /* Breaks words if they are too long */
+    text-align: center; /* Centers the title */
+    margin-bottom: 1rem; /* Adds spacing below the title */
+    word-break: break-word; /* Ensures long words wrap correctly */
+    text-align: left; /* Left-aligns the title */
+}
+
+
+
+.para-content{
+    margin: 25px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    color: rgb(61, 57, 57);
+    line-height: 1.6; /* Default line spacing for better readability */
+}
+  .gener{
+    margin: 50px 0px;
+  }
+
+
+  .Latest-posts{
+     width: 100%;
+  }
+  .genere-image img{
+     width:500px;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+@media screen and (max-width:800px) {
+    .genere-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem 1rem;
+    }
+    .para-content {
+        margin: 20px 0px;
+        font-size: 16px; /* Slightly smaller font size for medium screens */
+        line-height: 1.8; /* Increase line spacing to break into more lines */
+    }
+
+    .description {
+        padding: 0 10px; /* Adds some padding for better spacing */
+    }
+
+    
+}
+
+
+@media screen and (max-width:500px){
+
+    .genere-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 2rem 0.5rem;
+    }
+    .description h1{
+        font-size: 1.8rem;
+        padding: 1px 10px;
+        
+    }
+
+    .para-content{
+        margin: 2px 0px;
+        font-size: 14px;
+        padding: 1px 10px;
+        font-size: 14px; /* Smaller font size for small screens */
+        line-height: 1.9; /* Further increase line spacing for small screens */
+         
+    }
+    .genere-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .genere-image img{
+      width: 50%;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+
+    .genere-info-container{
+        flex-direction: column;
+    }
+} 
