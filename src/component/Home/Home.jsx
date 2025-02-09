@@ -30,9 +30,11 @@ const Home = () => {
 
   // Combine filtering for category and search query
   const filteredData = selectedCategory === "All"
+  //line number 35 omits the trending when all is selcted .
     ? blogs
-    .filter(blog => blog.title.toLowerCase().includes(searchQuery.toLowerCase())): blogs
-    .filter(blog => blog.category === selectedCategory && blog.title.toLowerCase().includes(searchQuery.toLowerCase()));
+    .filter(blog => blog.category !== "Trending" && blog.title.toLowerCase().includes(searchQuery.toLowerCase()))
+    // .filter(blog => blog.title.toLowerCase().includes(searchQuery.toLowerCase()))
+    : blogs.filter(blog => blog.category === selectedCategory && blog.title.toLowerCase().includes(searchQuery.toLowerCase()));
    
 
   const indexOfLastBlog = currentPage * blogsPerPage;
